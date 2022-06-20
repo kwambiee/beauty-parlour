@@ -5,7 +5,7 @@ import logger from "redux-logger";
 import brandReducer from "./BrandReducer";
 import { fetchProducts } from "./BrandReducer";
 
-const RootReducer = combineReducers({ brands: brandReducer });
+const RootReducer = combineReducers({ brandReducer });
 
 const Store = configureStore(
   { reducer: RootReducer },
