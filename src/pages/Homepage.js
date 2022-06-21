@@ -1,6 +1,6 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import Brand from "../components/brand";
+import React from 'react';
+import { useSelector } from 'react-redux';
+import Brand from '../components/brand';
 
 const HomePage = () => {
   const brandNames = useSelector((state) => state.brands.brands);
@@ -8,9 +8,13 @@ const HomePage = () => {
   return (
     <>
       <div>
-        {Object.keys(brandNames).map((brand, i) => {
-          return <Brand key={i} name={brand} products={brandNames[brand]} />;
-        })}
+        {Object.keys(brandNames).map((brand) => (
+          <Brand
+            key={brand[brand.id]}
+            name={brand}
+            products={brandNames[brand]}
+          />
+        ))}
       </div>
     </>
   );

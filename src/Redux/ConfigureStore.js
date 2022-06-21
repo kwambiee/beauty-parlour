@@ -1,15 +1,14 @@
-import { configureStore } from "@reduxjs/toolkit";
-import { combineReducers, applyMiddleware } from "redux";
-import thunk from "redux-thunk";
-import logger from "redux-logger";
-import brandReducer from "./BrandReducer";
-import { fetchProducts } from "./BrandReducer";
+import { configureStore } from '@reduxjs/toolkit';
+import { combineReducers, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import logger from 'redux-logger';
+import brandReducer, { fetchProducts } from './BrandReducer';
 
 const RootReducer = combineReducers({ brands: brandReducer });
 
 const Store = configureStore(
   { reducer: RootReducer },
-  applyMiddleware(thunk, logger)
+  applyMiddleware(thunk, logger),
 );
 Store.dispatch(fetchProducts());
 

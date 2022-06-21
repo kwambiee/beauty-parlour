@@ -1,6 +1,6 @@
-import Axios from "axios";
+import Axios from 'axios';
 
-const SETPRODUCTS = "react-app/redux/SETPRODUCTS";
+const SETPRODUCTS = 'react-app/redux/SETPRODUCTS';
 
 export const setProducts = (products) => ({
   type: SETPRODUCTS,
@@ -11,17 +11,17 @@ const initialState = { brands: {} };
 
 export const fetchProducts = () => async (dispatch) => {
   const apiData = await Axios.get(
-    "http://makeup-api.herokuapp.com/api/v1/products.json"
+    'http://makeup-api.herokuapp.com/api/v1/products.json',
   );
   const productsData = apiData.data;
 
   const brands = {};
   for (let i = 0; i < productsData.length; i += 1) {
-    let brand_name = productsData[i].brand;
-    if (brands[brand_name]) {
-      brands[brand_name] = [...brands[brand_name], productsData[i]];
+    const brandName = productsData[i].brand;
+    if (brands[brandName]) {
+      brands[brandName] = [...brands[brandName], productsData[i]];
     } else {
-      brands[brand_name] = [productsData[i]];
+      brands[brandName] = [productsData[i]];
     }
   }
 

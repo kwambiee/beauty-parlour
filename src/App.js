@@ -1,17 +1,17 @@
-import "./App.css";
-import HomePage from "./pages/Homepage";
-import { Link, NavLink, Route, Routes } from "react-router-dom";
-import BrandPage from "./pages/BrandPage";
+import './App.css';
+import { Link, Route, Routes } from 'react-router-dom';
+import HomePage from './pages/Homepage';
+import BrandPage from './pages/BrandPage';
 
 const App = () => (
   <div>
     <nav>
-      <Link to='/'></Link>
+      <Link to="/" />
     </nav>
     <Routes>
-      <Route path='/' element={<HomePage />} />
-      <Route path='brands' element={<BrandPage />}>
-        <Route path=':brandName' element={<BrandPage />} />
+      <Route path="/" element={<HomePage />} />
+      <Route path="brands" element={<BrandPage />}>
+        <Route path=":brandName" element={<BrandPage />} />
       </Route>
     </Routes>
   </div>
