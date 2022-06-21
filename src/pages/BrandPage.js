@@ -7,15 +7,17 @@ import Product from "../components/product";
 const BrandPage = () => {
   const params = useParams();
   const brandNames = useSelector((state) => state.brands.brands);
-  const products = brandNames[params.brandName];
+  const products = brandNames[params.brandName] || [];
+
   console.log(products);
 
   return (
     <div>
-      {products.map((product) => {
-        <Product products={product} />;
-      })}
-      <Outlet />
+      <p>{params.brandName}</p>
+      {products.map((product) => (
+        <Product products={product} />
+      ))}
+      {/* <Outlet /> */}
     </div>
   );
 };

@@ -6,8 +6,14 @@ const Product = ({ products }) => {
     <div>
       <div key={products.id}>
         <div>
-          <span>{products.image_link}</span>
-          <Link to='/'>Back arrow</Link>
+          <img
+            src={products.image_link}
+            onError={(e) => {
+              e.target.src =
+                "https://www.purpicks.com/wp-content/uploads/2018/02/Ombre-Amazonie-CC.png";
+            }}
+          />
+          <Link to='/'></Link>
         </div>
         <div>
           <h2>{products.name}</h2>
