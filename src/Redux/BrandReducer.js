@@ -7,31 +7,31 @@ export const setProducts = (products) => ({
   products,
 });
 
-const initialState = [];
+const initialState = { brands: {} };
 
 export const fetchProducts = () => async (dispatch) => {
   const apiData = await Axios.get(
     "http://makeup-api.herokuapp.com/api/v1/products.json"
   );
   const productsData = apiData.data;
-  const count = {};
+
+  const brands = {};
   for (let i = 0; i < productsData.length; i += 1) {
-    const { brand } = productsData[i];
-    if (count[brand]) {
-      count[brand] += 1;
+    let brand_name = productsData[i].brand;
+    if (brands[brand_name]) {
+      brands[brand_name] = [...brands[brand_name], productsData[i]];
     } else {
-      count[brand] = 1;
+      brands[brand_name] = [productsData[i]];
     }
   }
-  const productArray = Object.entries(count);
-  // console.log(productArray);
-  dispatch(setProducts(productArray));
+
+  dispatch(setProducts(brands));
 };
 
 const brandReducer = (state = initialState, action) => {
   switch (action.type) {
     case SETPRODUCTS:
-      return action.products;
+      return { ...state, brands: action.products };
     default:
       return state;
   }
