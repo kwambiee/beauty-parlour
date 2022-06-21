@@ -2,7 +2,7 @@ import "./App.css";
 import { Link, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/Homepage";
 import BrandPage from "./pages/BrandPage";
-import Details from "./components/Details";
+import Productpage from "./pages/ProductPage";
 
 const App = () => (
   <div>
@@ -14,7 +14,7 @@ const App = () => (
       <Route path='brands' element={<BrandPage />}>
         <Route path=':brandName' element={<BrandPage />} />
       </Route>
-      <Route path=':details' element={<Details />} />
+      <Route path='products/:productId' element={<Productpage />} />
     </Routes>
   </div>
 );

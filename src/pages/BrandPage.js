@@ -12,12 +12,7 @@ const BrandPage = () => {
     <div>
       <p>{params.brandName}</p>
       {products.map((product) => (
-        <Product
-          products={product}
-          id={product.id}
-          name={product.name}
-          brand={product.brand}
-        />
+        <Product details={product} id={product.id} />
       ))}
     </div>
   );

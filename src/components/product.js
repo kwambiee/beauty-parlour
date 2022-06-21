@@ -1,23 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Product = ({ products, name, brand, id }) => {
-  console.log(id);
+const Product = ({ details, id }) => {
   return (
     <div>
-      <Link to={`/${brand}/${name}`}>
+      <Link to={`/products/${id}`}>
         <div key={id}>
           <div>
             <img
-              src={products.image_link}
-              onError={(e) => {
-                e.target.src =
-                  "https://www.purpicks.com/wp-content/uploads/2018/02/Ombre-Amazonie-CC.png";
-              }}
+              src={details.image_link}
+              // onError={(e) => {
+              //   e.target.src =
+              //     "https://www.purpicks.com/wp-content/uploads/2018/02/Ombre-Amazonie-CC.png";
+              // }}
             />
           </div>
           <div>
-            <h2>{products.name}</h2>
+            <h2>{details.name}</h2>
             <span></span>
             {/* <p>
             {products.price_sign}

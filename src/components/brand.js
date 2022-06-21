@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import propTypes from "prop-types";
+import "./brand.css";
 
 const Brand = ({ name, products }) => (
   <div>
