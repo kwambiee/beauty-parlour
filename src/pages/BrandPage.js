@@ -6,11 +6,15 @@ import { useSelector } from "react-redux";
 const BrandPage = () => {
   let params = useParams();
   const brandNames = useSelector((state) => state.brands.brands);
-  console.log(brandNames[params.brandName]);
+  const brands = brandNames[params.brandName];
+  console.log(brands);
 
   return (
     <div>
-      <p>{params.brandName}</p>
+      {brands.map((brand) => {
+        <div></div>;
+      })}
+      <p></p>
       <Outlet />
     </div>
   );
