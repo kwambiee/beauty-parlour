@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Product = ({ products, name, brand, id }) => {
-  console.log(id);
+const Details = ({ products, id }) => {
   return (
     <div>
-      <Link to={`/${brand}/${name}`}>
+      <Link to='/'>
         <div key={id}>
           <div>
             <img
@@ -19,11 +18,11 @@ const Product = ({ products, name, brand, id }) => {
           <div>
             <h2>{products.name}</h2>
             <span></span>
-            {/* <p>
-            {products.price_sign}
-            {products.price}
-          </p>
-          <p>{products.description}</p> */}
+            <p>
+              {products.price_sign}
+              {products.price}
+            </p>
+            <p>{products.description}</p>
           </div>
         </div>
         ;
@@ -31,4 +30,4 @@ const Product = ({ products, name, brand, id }) => {
     </div>
   );
 };
-export default Product;
+export default Details;

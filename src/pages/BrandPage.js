@@ -1,6 +1,5 @@
 import React from "react";
-import { useParams, Outlet } from "react-router-dom";
-
+import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import Product from "../components/product";
 
@@ -9,15 +8,17 @@ const BrandPage = () => {
   const brandNames = useSelector((state) => state.brands.brands);
   const products = brandNames[params.brandName] || [];
 
-  console.log(products);
-
   return (
     <div>
       <p>{params.brandName}</p>
       {products.map((product) => (
-        <Product products={product} />
+        <Product
+          products={product}
+          id={product.id}
+          name={product.name}
+          brand={product.brand}
+        />
       ))}
-      {/* <Outlet /> */}
     </div>
   );
 };

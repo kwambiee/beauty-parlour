@@ -1,7 +1,7 @@
 /* eslint react/prop-types: 0 */
-import React from 'react';
-import { Link } from 'react-router-dom';
-import propTypes from 'prop-types';
+import React from "react";
+import { Link } from "react-router-dom";
+import propTypes from "prop-types";
 
 const Brand = ({ name, products }) => (
   <div>
