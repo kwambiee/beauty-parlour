@@ -1,56 +1,56 @@
-import React from "react";
-import { Provider } from "react-redux";
-import renderer from "react-test-renderer";
-import Brand from "./brand";
-import Product from "./product";
-import Header from "./Header";
-import Store from "../Redux/ConfigureStore";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import React from 'react';
+import { Provider } from 'react-redux';
+import renderer from 'react-test-renderer';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
+import Brand from './brand';
+import Product from './product';
+import Header from './Header';
+import Store from '../Redux/ConfigureStore';
 
-const brandProvider = () => (
+export const brandProvider = () => (
   <Provider store={Store}>
     <Brand />
   </Provider>
 );
 
-const headerProvider = () => (
+export const headerProvider = () => (
   <Provider store={Store}>
     <Header />
   </Provider>
 );
 
-const productProvider = () => (
+export const productProvider = () => (
   <Provider store={Store}>
     <Product />
   </Provider>
 );
 
-describe("Check Brand Component", () => {
-  it("renders correctly", () => {
+describe('Check Brand Component', () => {
+  it('renders correctly', () => {
     const component = renderer.create(<brandProvider />).toJSON();
     expect(component).toMatchSnapshot();
   });
 });
-describe("Check header Component", () => {
-  it("renders correctly", () => {
+describe('Check header Component', () => {
+  it('renders correctly', () => {
     const component = renderer.create(<headerProvider />).toJSON();
     expect(component).toMatchSnapshot();
   });
 });
-describe("Check product Component", () => {
-  it("renders correctly", () => {
+describe('Check product Component', () => {
+  it('renders correctly', () => {
     const component = renderer.create(<productProvider />).toJSON();
     expect(component).toMatchSnapshot();
   });
 });
 
-test("Link matches snapshot", () => {
+test('Link matches snapshot', () => {
   const component = renderer.create(
     <Router>
-      <Link to='#' />
-    </Router>
+      <Link to="/" />
+    </Router>,
   );
 
-  let tree = component.toJSON();
+  const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
