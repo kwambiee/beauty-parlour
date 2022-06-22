@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Product = ({ details, id }) => (
   <div>
-    <Link to={`/products/${id}`}>
+    <Link to={`/products/${id}`} style={{ textDecoration: 'none' }}>
       <div key={id} style={{ paddingBottom: '1rem', marginBottom: '1rem' }}>
         <div>
           <img

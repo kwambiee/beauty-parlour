@@ -8,7 +8,7 @@ import BrushIcon from '@mui/icons-material/Brush';
 const Brand = ({ name, products }) => (
   <div className="brands">
     <div>
-      <Link to={`/brands/${name}`}>
+      <Link to={`/brands/${name}`} style={{ textDecoration: 'none' }}>
         <h1 className="productName">{name}</h1>
         <div
           className="brushIcon"

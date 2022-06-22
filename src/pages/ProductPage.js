@@ -26,7 +26,8 @@ export default function Productpage() {
         className="productPage"
         style={{
           display: 'flex',
-          margin: '0 15%',
+          backgroundImage: 'url(/assets/makeup.jpg)',
+          padding: '2rem',
         }}
       >
         <div className="productDetails">
@@ -60,7 +61,7 @@ export default function Productpage() {
         <div style={{ border: '1px solid #FEC2D6' }} className="productBorder">
           <p
             style={{
-              width: '500px',
+              // width: "500px",
               backgroundColor: '#FEC2D6',
               padding: '3rem',
               margin: '0.5rem',

@@ -9,7 +9,10 @@ const BrandPage = () => {
   const products = brandNames[params.brandName] || [];
 
   return (
-    <div className="products">
+    <div
+      className="products"
+      style={{ backgroundImage: 'url(/assets/makeup.jpg)' }}
+    >
       <p style={{ display: 'none' }}>{params.brandName}</p>
       {products.map((product) => (
         <Product details={product} id={product.id} key={product.id} />

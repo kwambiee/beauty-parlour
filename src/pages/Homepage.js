@@ -11,7 +11,13 @@ const HomePage = () => {
   return (
     <>
       <div>
-        <div className="layer">
+        <div
+          className="layer"
+          style={{
+            backgroundImage: 'url(/assets/makeup.jpg)',
+            backgroundColor: 'rgba(236, 76, 138, 0.9)',
+          }}
+        >
           <div>
             <Header />
           </div>
