@@ -23,12 +23,13 @@ export default function Productpage() {
   return (
     <div>
       <div
+        className="productPage"
         style={{
           display: 'flex',
           margin: '0 15%',
         }}
       >
-        <div>
+        <div className="productDetails">
           <img
             src={product.image_link}
             alt="makeup product"
@@ -43,6 +44,7 @@ export default function Productpage() {
             }}
           />
           <p
+            className="price"
             style={{
               margin: '1rem 0 0 4rem',
               backgroundColor: 'peachpuff',
@@ -55,7 +57,7 @@ export default function Productpage() {
             {product.price}
           </p>
         </div>
-        <div style={{ border: '1px solid #FEC2D6' }}>
+        <div style={{ border: '1px solid #FEC2D6' }} className="productBorder">
           <p
             style={{
               width: '500px',
@@ -64,6 +66,7 @@ export default function Productpage() {
               margin: '0.5rem',
               borderRadius: '5px',
             }}
+            className="productDescription"
           >
             {product.description}
           </p>

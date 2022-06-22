@@ -8,16 +8,18 @@ const Product = ({ details, id }) => (
         <div>
           <img
             src={details.image_link}
-            alt="Images of brand products"
+            alt="Brand products"
             onError={(e) => {
               e.target.onerror = null;
               e.target.src = 'https://images.pexels.com/photos/3018845/pexels-photo-3018845.jpeg';
             }}
             style={{ width: '300px', height: '300px' }}
+            className="image"
           />
         </div>
         <div>
           <h2
+            className="Producttitle"
             style={{
               fontFamily: 'Rubik Moonrocks, cursive',
               fontSize: '25px',

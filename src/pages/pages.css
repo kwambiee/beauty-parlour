@@ -35,8 +35,6 @@ nav {
   color: #fff;
   text-align: end;
   padding: 3rem 10% 1.5rem 0;
-
-  /* background-color: rgb(236, 76, 138); */
 }
 
 .button {
@@ -129,4 +127,46 @@ nav {
   grid-gap: 1rem;
   padding: 1rem;
   padding-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+
+    /* max-width: 100vh; */
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.3rem;
+  }
+
+  img {
+    width: 280px !important;
+  }
+
+  .Producttitle {
+    text-align: start;
+  }
+
+  .productPage {
+    flex-direction: column;
+  }
+
+  .productDetails {
+    display: flex;
+  }
+
+  .price {
+    height: 50px;
+  }
+
+  .productBorder {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .productDescription {
+    width: 90% !important;
+  }
 }
