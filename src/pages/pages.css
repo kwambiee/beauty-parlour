@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(236, 76, 138);
+}
+.header{
+    color: #fff;
+    text-align: end;
+    /* background: url('./assets/makeup-cart.jpg'); */
+    
+}
