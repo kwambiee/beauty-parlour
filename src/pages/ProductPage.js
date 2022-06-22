@@ -8,9 +8,6 @@ export default function Productpage() {
   const params = useParams();
   const products = useSelector((state) => state.brands.products);
 
-  // const products = brandNames[params.productId] || [];
-  console.log(products);
-
   useEffect(() => {
     const getProduct = () => {
       const newState = products.find(
@@ -33,6 +30,7 @@ export default function Productpage() {
         <div>
           <img
             src={product.image_link}
+            alt="makeup product"
             onError={(e) => {
               e.target.onerror = null;
               e.target.src = 'https://images.pexels.com/photos/3018845/pexels-photo-3018845.jpeg';

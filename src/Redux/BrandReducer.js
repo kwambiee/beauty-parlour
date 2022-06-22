@@ -34,9 +34,7 @@ export const fetchProducts = () => async (dispatch) => {
   dispatch(addProducts(productsData));
 };
 
-export const fetchProduct = async (id) => await Axios.get(
-  `http://makeup-api.herokuapp.com/api/v1/products/${id}`,
-);
+export const fetchProduct = (id) => Axios.get(`http://makeup-api.herokuapp.com/api/v1/products/${id}`);
 
 const brandReducer = (state = initialState, action) => {
   switch (action.type) {

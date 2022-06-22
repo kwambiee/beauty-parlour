@@ -39,6 +39,7 @@ const Brand = ({ name, products }) => (
 
         <div>
           <button
+            type="button"
             style={{
               background: 'transparent',
               fontFamily: 'Karla, sans-serif',

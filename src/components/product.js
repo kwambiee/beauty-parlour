@@ -8,6 +8,7 @@ const Product = ({ details, id }) => (
         <div>
           <img
             src={details.image_link}
+            alt="Images of brand products"
             onError={(e) => {
               e.target.onerror = null;
               e.target.src = 'https://images.pexels.com/photos/3018845/pexels-photo-3018845.jpeg';
