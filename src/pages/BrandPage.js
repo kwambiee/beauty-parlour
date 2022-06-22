@@ -9,8 +9,8 @@ const BrandPage = () => {
   const products = brandNames[params.brandName] || [];
 
   return (
-    <div>
-      <p>{params.brandName}</p>
+    <div className='products'>
+      <p style={{ display: "none" }}>{params.brandName}</p>
       {products.map((product) => (
         <Product details={product} id={product.id} />
       ))}

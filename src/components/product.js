@@ -5,27 +5,44 @@ const Product = ({ details, id }) => {
   return (
     <div>
       <Link to={`/products/${id}`}>
-        <div key={id}>
+        <div key={id} style={{ paddingBottom: "1rem", marginBottom: "1rem" }}>
           <div>
             <img
               src={details.image_link}
-              // onError={(e) => {
-              //   e.target.src =
-              //     "https://www.purpicks.com/wp-content/uploads/2018/02/Ombre-Amazonie-CC.png";
-              // }}
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src =
+                  "https://images.pexels.com/photos/3018845/pexels-photo-3018845.jpeg";
+              }}
+              style={{ width: "300px", height: "300px" }}
             />
           </div>
           <div>
-            <h2>{details.name}</h2>
-            <span></span>
-            {/* <p>
-            {products.price_sign}
-            {products.price}
-          </p>
-          <p>{products.description}</p> */}
+            <h2
+              style={{
+                fontFamily: "Rubik Moonrocks, cursive",
+                fontSize: "25px",
+                color: "white",
+                width: "300px",
+                textAlign: "center",
+                marginBottom: "1rem",
+              }}
+            >
+              {details.name}
+            </h2>
+            <span
+              className='More'
+              style={{
+                fontFamily: "Karla, sans-serif",
+                color: "black",
+                margin: "1rem 0 1rem 6rem",
+                border: "2px solid #fff",
+              }}
+            >
+              Shop Now
+            </span>
           </div>
         </div>
-        ;
       </Link>
     </div>
   );
