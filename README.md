@@ -42,11 +42,13 @@ This app extracts data Makeup API and displays a list of different brands, produ
 
 ## Screenshots 📸
 
-Screenshots can be found in the repository.
+![Home Page](./public/assets/homepage.png)
+![Product Page](./public/assets/Products.png)
+![Details Page](./public/assets/details.png)
 
 ## Live Demo 🔗
 
-Check the live demo [netlify](https://app-pokemon-webapp.netlify.app/)👈
+Check the live demo [netlify](https://beauty-parlour-kwambiee.netlify.app/)👈
 
 ## Getting Started
 

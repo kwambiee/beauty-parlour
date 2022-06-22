@@ -1,7 +1,7 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import { useSelector } from 'react-redux';
-import Product from '../components/product';
+import React from "react";
+import { useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
+import Product from "../components/product";
 
 const BrandPage = () => {
   const params = useParams();
@@ -9,8 +9,11 @@ const BrandPage = () => {
   const products = brandNames[params.brandName] || [];
 
   return (
-    <div className="products">
-      <p style={{ display: 'none' }}>{params.brandName}</p>
+    <div
+      className='products'
+      style={{ backgroundImage: "url(/assets/makeup.jpg)" }}
+    >
+      <p style={{ display: "none" }}>{params.brandName}</p>
       {products.map((product) => (
         <Product details={product} id={product.id} key={product.id} />
       ))}

@@ -1,6 +1,8 @@
 import React from "react";
+import img from "./makeup.jpg";
 
 const Header = () => {
+  console.log(img);
   return (
     <div className='header'>
       <h1>
