@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import uuid from 'react-uuid';
 import Brand from '../components/brand';
 import Header from '../components/Header';
 import './pages.css';
@@ -15,8 +16,8 @@ const HomePage = () => {
             <Header />
           </div>
           <div className="gridContainer">
-            {Object.keys(brandNames).map((brand, i) => (
-              <Brand key={i} name={brand} products={brandNames[brand]} />
+            {Object.keys(brandNames).map((brand) => (
+              <Brand key={uuid()} name={brand} products={brandNames[brand]} />
             ))}
           </div>
         </div>
