@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check Brand Page renders correctly 1`] = `<brandPage />`;
+
+exports[`Check Home Page renders correctly 1`] = `<homePage />`;
+
+exports[`Check Home Page renders correctly 2`] = `<prodPage />`;
