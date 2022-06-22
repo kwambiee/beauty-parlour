@@ -31,7 +31,7 @@ export const fetchProducts = () => async (dispatch) => {
   }
 
   dispatch(setProducts(brands));
-  dispatch(addProducts(brands));
+  dispatch(addProducts(productsData));
 };
 
 export const fetchProduct = async (id) => {

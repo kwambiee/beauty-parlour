@@ -9,13 +9,17 @@ const HomePage = () => {
 
   return (
     <>
-      <div>
-        <div>
-          <Header />
+      <div className='brandWrapper'>
+        <div className='layer'>
+          <div>
+            <Header />
+          </div>
+          <div className='gridContainer'>
+            {Object.keys(brandNames).map((brand, i) => (
+              <Brand key={i} name={brand} products={brandNames[brand]} />
+            ))}
+          </div>
         </div>
-        {Object.keys(brandNames).map((brand, i) => (
-          <Brand key={i} name={brand} products={brandNames[brand]} />
-        ))}
       </div>
     </>
   );

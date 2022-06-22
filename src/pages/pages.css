@@ -1,14 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
 *{
     margin: 0;
     box-sizing: border-box;
 }
-
 body{
-    background-color: rgb(236, 76, 138);
+    font-family: 'Niconne', cursive;
+    font-size: 25px;
+    letter-spacing: 0.1em;
 }
+.brandWrapper{
+    background-image: url('https://images.unsplash.com/photo-1596205521983-9c372fb3d4f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80');
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.layer {
+    background-color: rgba(236, 76, 138,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    /* background-color: transparent; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1); */
+    
+}     
+    
+
 .header{
     color: #fff;
     text-align: end;
-    /* background: url('./assets/makeup-cart.jpg'); */
+    padding: 3rem 10% 1.5rem 0;
+    /* background-color: rgb(236, 76, 138); */
     
+}
+.button{
+    padding: 0.5rem 1rem;
+    margin-right: 4rem;
+    margin-top: 1rem;
+    border: 2px solid #fff;
+    background-color: rgba(0, 0, 0, 0);
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 0;
+}
+.brands{
+    border: 0.5px solid #e7e7e7;
+    background-color: transparent;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+    min-height: 200px;
+    background-color: rgba(236, 76, 137, 0.9);
+    text-align: center;
+    padding-top: 10%;
+   
+}
+.brands h1,h2{
+    text-decoration: none;
+}
+.brands h2{
+            color: transparent;
+            overflow: hidden;
+            background: linear-gradient(45deg, black 30%, transparent 30%, transparent 70%, black 70%), linear-gradient(-45deg, black 30%, transparent 30%, transparent 70%, black 70%), linear-gradient(90deg, crimson 30%, transparent 30%, transparent 70%, crimson 70%)red;
+            background-size: 20px 20px, 20px 20px, 1px 1px;
+            background-position: 0 0, 0 0, 0 0;
+            -webkit-background-clip: text;
+            -webkit-text-stroke: 4px white;
+            filter: drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 2px crimson);
+            animation: bg-shift 1s ease-in-out infinite alternate-reverse, swing 2s ease-in-out infinite;
+        }
+    
+        h1::before {
+            content: "";
+            position: absolute;
+            background: linear-gradient(transparent 30%, white, transparent 70%);
+            -webkit-background-clip: text;
+            animation: bg-shift2 2s ease-in-out infinite alternate-reverse;
+            -webkit-text-stroke: 2px red;
+        }
+    
+        @keyframes bg-shift {
+            from {
+                background-position: 0 50px;
+            }
+        }
+    
+        @keyframes bg-shift2 {
+            0% {
+                background-position: 0 50px;
+            }
+    
+            50% {
+    
+                background-position: 0 -50px;
+    
+            }
+    
+            100% {
+                background-position: 0 50px;
+            }
+        }
+    
+        @keyframes swing {
+            0% {
+                transform-origin: top;
+                transform: perspective(550px)rotatex(55deg);
+            }
+    
+            50% {
+                transform: perspective(550px)rotatex(-55deg);
+            }
+    
+            100% {
+                transform-origin: top;
+                transform: perspective(550px)rotatex(55deg);
+    
+            }
 }

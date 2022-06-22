@@ -14,30 +14,19 @@ export default function Productpage() {
   console.log(products);
 
   useEffect(() => {
-    const getProduct = async () => {
-      try {
-        // const newState = products.filter(
-        //   (product) => product.id === params.productId
-        // );
+    const getProduct = () => {
+      const newState = products.find(
+        (product) => product.id == params.productId
+      );
 
-        // console.log(product.id);
-        setProduct({ ...product, newState });
-        // let result = await fetchProduct(params.productId);
-        // console.log(result);
-        // setProduct(result.data);
-      } catch (error) {
-        console.log("error");
-      }
+      setProduct(newState || {});
     };
     getProduct();
   }, []);
 
   return (
     <div>
-      {/* <p>{params.productId}</p> */}
-      {/* {products.map((product) => (
-        <ProductItem products={product} id={product.id} />
-      ))} */}
+      <p>{product.name}</p>
     </div>
   );
 }

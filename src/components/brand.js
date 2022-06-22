@@ -6,17 +6,16 @@ import "./brand.css";
 import Header from "./Header";
 
 const Brand = ({ name, products }) => (
-  <div>
-    <Link to={`/brands/${name}`}>
-      <p>
-        Brand Name:
-        {name}
-      </p>
-      <p>
-        Brand Products:
-        {products.length}
-      </p>
-    </Link>
+  <div className='brands'>
+    <div>
+      <Link to={`/brands/${name}`}>
+        <h1>{name}</h1>
+        <h2>
+          Products:
+          {products.length}
+        </h2>
+      </Link>
+    </div>
   </div>
 );
 Brand.propTypes = {
