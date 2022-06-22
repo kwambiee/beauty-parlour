@@ -9,7 +9,7 @@ const HomePage = () => {
 
   return (
     <>
-      <div className='brandWrapper'>
+      <div>
         <div className='layer'>
           <div>
             <Header />

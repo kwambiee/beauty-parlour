@@ -35,7 +35,8 @@ const Product = ({ details, id }) => {
               style={{
                 fontFamily: "Karla, sans-serif",
                 color: "black",
-                margin: "1rem 0 1rem 6rem",
+                padding: "0.5rem",
+                margin: "3rem 0 1rem 6rem",
                 border: "2px solid #fff",
               }}
             >

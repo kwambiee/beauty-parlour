@@ -3,11 +3,19 @@ import { Link, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/Homepage";
 import BrandPage from "./pages/BrandPage";
 import Productpage from "./pages/ProductPage";
+import HomeIcon from "@mui/icons-material/Home";
 
 const App = () => (
-  <div>
+  <div className='brandWrapper'>
     <nav>
-      <Link to='/' />
+      <Link to='/'>
+        <HomeIcon
+          color='secondary'
+          sx={{
+            fontSize: "2rem",
+          }}
+        />
+      </Link>
     </nav>
     <Routes>
       <Route path='/' element={<HomePage />} />

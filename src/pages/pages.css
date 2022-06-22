@@ -11,13 +11,19 @@ body{
     font-size: 25px;
     letter-spacing: 0.1em;
 }
-.brandWrapper{
-    background-image: url('https://images.unsplash.com/photo-1596205521983-9c372fb3d4f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80');
-    position: relative;
-    width: 100%;
-    height: 100%;
-    
+nav{
+    display: flex;
+    justify-content:end;
+    padding:2rem;
 }
+/* .brandWrapper{
+    /* background-color: rgba(4, 68, 5, 0.8); */
+    /* background: url('https: //cdn.pixabay.com/photo/2018/01/14/00/05/makeup-3081015_1280.jpg'); */
+    /* position: relative; */
+    /* width: 100%; */
+    /* height: 100vh; */
+    
+*/
 
 .layer {
     background-color: rgba(236, 76, 138,0.8);
@@ -71,7 +77,7 @@ body{
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 }
-.brands h2{
+.productLength{
             color: transparent;
             font-family: 'Karla', sans-serif;
             font-size: 32px;
