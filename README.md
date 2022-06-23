@@ -101,15 +101,15 @@ Please find the link in the Live Demo section.
 
 👤 **Joy Kwamboka** <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="20"/>
 
-- LinkedIn: [![LinkedIn Badge](https://img.shields.io/badge/-mavericks--db-white?logo=LinkedIn&logoColor=0A66C2&style=plastic)](https://www.linkedin.com/in/joy-kwamboka/)
+- LinkedIn: [![LinkedIn Badge](https://img.shields.io/badge/-kwambiee-white?logo=LinkedIn&logoColor=0A66C2&style=plastic)](https://www.linkedin.com/in/joy-kwamboka/)
 
-- AngelList: [![AngelList Badge](https://img.shields.io/badge/-mavericks--db-white?logo=AngelList&logoColor=000000&style=plastic)](https://angel.co/u/joy-kwamboka)
+- AngelList: [![AngelList Badge](https://img.shields.io/badge/-kwambiee-white?logo=AngelList&logoColor=000000&style=plastic)](https://angel.co/u/joy-kwamboka)
 
-- GitHub: [![GitHub Badge](https://img.shields.io/badge/-mavericks--db-white?logo=GitHub&logoColor=181717&style=plastic)](https://github.com/kwambiee)
+- GitHub: [![GitHub Badge](https://img.shields.io/badge/-kwambiee-white?logo=GitHub&logoColor=181717&style=plastic)](https://github.com/kwambiee)
 
-- Twitter: [![Twitter Badge](https://img.shields.io/badge/-mavericks__db-white?logo=Twitter&logoColor=1DA1F2&style=plastic)](https://twitter.com/kwambiee)
+- Twitter: [![Twitter Badge](https://img.shields.io/badge/-kwambiee-white?logo=Twitter&logoColor=1DA1F2&style=plastic)](https://twitter.com/kwambiee)
 
-- Gmail: [![Gmail Badge](https://img.shields.io/badge/-balitaanmavericks-white?logo=Gmail&logoColor=EA4335&style=plastic)](mailto:kwambokaj2.jk@gmail.com)
+- Gmail: [![Gmail Badge](https://img.shields.io/badge/-kwambiee-white?logo=Gmail&logoColor=EA4335&style=plastic)](mailto:kwambokaj2.jk@gmail.com)
 
 ## 🤝 Contributing
 
