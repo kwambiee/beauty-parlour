@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9a08ab01-f089-4f3c-acb4-ef195a769739/deploy-status)](https://app.netlify.com/sites/app-pokemon-webapp/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9a08ab01-f089-4f3c-acb4-ef195a769739/deploy-status)](https://kwambiee-makeup.netlify.app/)
 
 # Beauty Parlour App
 
