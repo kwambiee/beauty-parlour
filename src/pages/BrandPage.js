@@ -17,13 +17,27 @@ const BrandPage = () => {
   return (
     <div>
       <div>
-        <button onClick={handleClick}>
+        <button
+          onClick={handleClick}
+          style={{
+            top: "-5rem",
+            position: "relative",
+            left: "1rem",
+            padding: "10px",
+            border: "none",
+            backgroundColor: "#9c27b0",
+          }}
+        >
           <ArrowBackIcon />
         </button>
       </div>
       <div
         className='products'
-        style={{ backgroundImage: "url(/assets/makeup.jpg)" }}
+        style={{
+          backgroundImage: "url(/assets/makeup.jpg)",
+          top: "-3rem",
+          position: "relative",
+        }}
       >
         <p style={{ display: "none" }}>{params.brandName}</p>
         {products.map((product) => (

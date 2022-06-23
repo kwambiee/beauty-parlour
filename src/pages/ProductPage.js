@@ -26,7 +26,17 @@ export default function Productpage() {
   return (
     <div>
       <div>
-        <button onClick={() => navigate(-1)}>
+        <button
+          onClick={() => navigate(-1)}
+          style={{
+            top: "-5rem",
+            position: "relative",
+            left: "1rem",
+            padding: "10px",
+            border: "none",
+            backgroundColor: "#9c27b0",
+          }}
+        >
           <ArrowBackIcon />
         </button>
       </div>
@@ -36,6 +46,8 @@ export default function Productpage() {
           display: "flex",
           backgroundImage: "url(/assets/makeup.jpg)",
           padding: "2rem",
+          top: "-3rem",
+          position: "relative",
         }}
       >
         <div className='productDetails'>

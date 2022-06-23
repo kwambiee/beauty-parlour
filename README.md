@@ -28,10 +28,6 @@ This app extracts data Makeup API and displays a list of different brands, produ
 - [x] Apply React best practices and language style guides in code.
 - [x] Use store, actions and reducers in React.
 
-## Project Documentation 📄
-
-- [x] Here is the presentation video [link](https://drive.google.com/file/d/1TOnf7yuGItQzSfxj6WnMh_dTBKG_8qoI/view?usp=sharing)👈
-
 ## Built With 🛠️
 
 - [x] Languages: HTML, Sass and JavaScript
@@ -128,6 +124,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - [Microverse](https://www.microverse.org/)
+- The Creator of original design: [Nelson Sakwa ](https://www.behance.net/sakwadesignstudio)
 - Code Reviewers
 
 ## 📝 License

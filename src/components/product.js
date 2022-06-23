@@ -23,7 +23,7 @@ const Product = ({ details, id }) => {
             <h2
               className='Producttitle'
               style={{
-                fontFamily: "Rubik Moonrocks, cursive",
+                fontWeight: "700",
                 fontSize: "25px",
                 color: "white",
                 width: "300px",
@@ -36,7 +36,6 @@ const Product = ({ details, id }) => {
             <span
               className='More'
               style={{
-                fontFamily: "Karla, sans-serif",
                 color: "black",
                 padding: "0.5rem",
                 margin: "3rem 0 1rem 6rem",
