@@ -45,6 +45,7 @@ This app extracts data Makeup API and displays a list of different brands, produ
 ## Live Demo 🔗
 
 Check the live demo [netlify](https://kwambiee-makeup.netlify.app/)👈
+[heroku](https://kwambiee-makeup.herokuapp.com/)
 <br>
 check video presentation[Video Presentation](https://www.loom.com/share/2c20791a4710438d92b4ba6e8e28711b)
 
