@@ -45,7 +45,7 @@ This app extracts data Makeup API and displays a list of different brands, produ
 ## Live Demo 🔗
 
 Check the live demo [netlify](https://beauty-parlour-kwambiee.netlify.app/)👈
-check video presentation[Video Presentation](https://www.loom.com/share/7af0fdd2de654b2a89d116e21f81b29e)
+check video presentation[Video Presentation](https://www.loom.com/share/2c20791a4710438d92b4ba6e8e28711b)
 
 ## Getting Started
 
