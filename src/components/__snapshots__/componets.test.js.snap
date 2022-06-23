@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check Brand Component renders correctly 1`] = `<brandProvider />`;
+
+exports[`Check Brand Component renders correctly 2`] = `<headerProvider />`;
+
+exports[`Check Brand Component renders correctly 3`] = `<productProvider />`;
+
+exports[`Check header Component renders correctly 1`] = `<headerProvider />`;
+
+exports[`Check product Component renders correctly 1`] = `<productProvider />`;
+
+exports[`Link matches snapshot 1`] = `
+<a
+  href="/"
+  onClick={[Function]}
+/>
+`;

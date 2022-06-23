@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  letter-spacing: 0.1em;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.layer {
+  background-color: rgba(236, 76, 138, 0.9);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.header {
+  background-color: rgba(236, 76, 138, 0.9);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 10% 1.5rem 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  margin-right: 4rem;
+  margin-top: 1rem;
+  border: 2px solid #fff;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 0;
+}
+
+.brands {
+  border: 0.5px solid #e7e7e7;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+  min-height: 200px;
+  background-color: rgba(236, 76, 137, 0.9);
+  text-align: center;
+  padding-top: 5%;
+}
+
+.productName {
+  font-size: 60px;
+  background: -webkit-linear-gradient(rgb(160, 143, 143), rgb(54, 45, 45));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.productLength {
+  color: transparent;
+  font-family: 'Lato', sans-serif;
+  font-size: 32px;
+  background: linear-gradient(45deg, black 30%, transparent 30%, transparent 70%, black 70%), linear-gradient(-45deg, black 30%, transparent 30%, transparent 70%, black 70%), linear-gradient(90deg, crimson 30%, transparent 30%, transparent 70%, crimson 70%) red;
+  background-size: 20px 20px, 20px 20px, 1px 1px;
+  background-position: 0 0, 0 0, 0 0;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 2px white;
+  filter: drop-shadow(0 0 1px black) drop-shadow(0 0 1px black) drop-shadow(0 0 1px black) drop-shadow(0 0 1px black) drop-shadow(0 0 1px black) drop-shadow(0 0 1px black) drop-shadow(0 0 1px black) drop-shadow(0 0 1px black) drop-shadow(0 0 2px crimson);
+  animation: bg-shift 1s ease-in-out infinite alternate-reverse, swing 2s ease-in-out infinite;
+}
+
+@keyframes bg-shift {
+  from {
+    background-position: 0 50px;
+  }
+}
+
+@keyframes bg-shift2 {
+  0% {
+    background-position: 0 50px;
+  }
+
+  50% {
+    background-position: 0 -50px;
+  }
+
+  100% {
+    background-position: 0 50px;
+  }
+}
+
+@keyframes swing {
+  0% {
+    transform-origin: top;
+    transform: perspective(550px) rotateX(55deg);
+  }
+
+  50% {
+    transform: perspective(550px) rotateX(-55deg);
+  }
+
+  100% {
+    transform-origin: top;
+    transform: perspective(550px) rotateX(55deg);
+  }
+}
+
+.products {
+  background-color: rgba(236, 76, 137, 0.9);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  padding: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.3rem;
+  }
+
+  img {
+    width: 280px !important;
+  }
+
+  .Producttitle {
+    text-align: start;
+  }
+
+  .productPage {
+    flex-direction: column;
+  }
+
+  .productDetails {
+    display: flex;
+  }
+
+  .price {
+    height: 50px;
+  }
+
+  .productBorder {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .productDescription {
+    width: 90% !important;
+  }
+}
